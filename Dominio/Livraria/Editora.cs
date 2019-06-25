@@ -5,13 +5,16 @@ using System.Text;
 
 namespace Dominio.Livraria
 {
-    public class Autor
+    public class Editora
     {
-        [Description("IDAUTOR")]
+        [Description("IDEDITORA")]
         public Guid Id { get; set; }
         [Description("NOME")]
         public string Nome { get; set; }
-        [Description("SOBRE")]
-        public string Sobre { get; set; }
+        [Description("ENDERECO")]
+        public string Endereco { get; set; }
+        [Description("TELEFONE")]
+        public string Telefone { get; set; }
+
     }
 }
