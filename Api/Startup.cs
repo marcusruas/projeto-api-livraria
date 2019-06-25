@@ -13,7 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 
-namespace NomeAPI {
+namespace Api {
     public class Startup {
         public Startup(IConfiguration configuration) {
             Configuration = configuration;
@@ -30,7 +30,7 @@ namespace NomeAPI {
 
             //Middlewares
             services.AddSwaggerGen(c => {
-                c.SwaggerDoc("v1", new Info { Title = "Nome Da API", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "LivrariaAPI", Version = "v1" });
             });
             services.AddCors(options => {
                 options.AddPolicy("PermissionamentoReact",
@@ -56,7 +56,7 @@ namespace NomeAPI {
 
             app.UseSwagger();
             app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Minha API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "LivrariaAPI V1");
             });
 
             app.UseHttpsRedirection();
