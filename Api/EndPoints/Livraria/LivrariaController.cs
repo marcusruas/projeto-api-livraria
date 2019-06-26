@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Dominio.Livraria;
 using Microsoft.AspNetCore.Mvc;
 using Servico.Interface.Livraria;
 
@@ -18,6 +19,10 @@ namespace Api.EndPoints.Livraria
             _livrariaServico = livrariaServico;
         }
 
-
+        [HttpPost]
+        public void InserirNovoAutor(Autor autor)
+        {
+            _livrariaServico.InserirNovoAutor(autor);
+        }
     }
 }
