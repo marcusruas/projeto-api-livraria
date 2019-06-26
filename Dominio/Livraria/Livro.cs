@@ -9,7 +9,9 @@ namespace Dominio.Livraria
     {
         [Description("IDLIVRO")]
         public Guid Id { get; set; }
-        [Description("ANO")]
+        [Description("NOME")]
+        public string Nome { get; set; }
+        [Description("ANOEDICAO")]
         public int AnoCriacao { get; set; }
         [Description("NumPaginas")]
         public int NumeroPaginas { get; set; }
