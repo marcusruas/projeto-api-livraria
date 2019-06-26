@@ -1,4 +1,5 @@
-﻿using Repositorio.Interface.Livraria;
+﻿using Dominio.Livraria;
+using Repositorio.Interface.Livraria;
 using Servico.Interface.Livraria;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,9 @@ namespace Servico.Implementacao.Livraria
             _livrariaRepositorio = livrariaRepositorio;
         }
 
-
+        public void InserirNovoAutor(Autor autor)
+        {
+            _livrariaRepositorio.InserirNovoAutor(autor);
+        }
     }
 }
