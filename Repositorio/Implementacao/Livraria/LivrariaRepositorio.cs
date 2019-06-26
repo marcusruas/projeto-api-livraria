@@ -22,7 +22,7 @@ namespace Repositorio.Implementacao.Livraria
 
         public void InserirNovoAutor(Autor autor)
         {
-            throw new NotImplementedException();
+            Conexao.Executar("inserirNovoAutor", "APPS", autor);
         }
     }
 }
