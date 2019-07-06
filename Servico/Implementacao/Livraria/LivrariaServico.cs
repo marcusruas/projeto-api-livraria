@@ -19,5 +19,10 @@ namespace Servico.Implementacao.Livraria
         {
             _livrariaRepositorio.InserirNovoAutor(autor);
         }
+
+        public void AtualizarAutor(Autor autor)
+        {
+            _livrariaRepositorio.AtualizarAutor(autor);
+        }
     }
 }

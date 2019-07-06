@@ -19,10 +19,18 @@ namespace Api.EndPoints.Livraria
             _livrariaServico = livrariaServico;
         }
 
+        #region Endpoints Autor
         [HttpPost]
         public void InserirNovoAutor(Autor autor)
         {
             _livrariaServico.InserirNovoAutor(autor);
         }
+
+        [HttpPut]
+        public void AtualizarAutor(Autor autor)
+        {
+            _livrariaServico.AtualizarAutor(autor);
+        }
+        #endregion Endpoints Autor
     }
 }

@@ -8,5 +8,6 @@ namespace Servico.Interface.Livraria
     public interface ILivrariaServico
     {
         void InserirNovoAutor(Autor autor);
+        void AtualizarAutor(Autor autor);
     }
 }

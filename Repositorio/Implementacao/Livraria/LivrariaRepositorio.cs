@@ -15,14 +15,14 @@ namespace Repositorio.Implementacao.Livraria
             Conexao = conexao;
         }
 
-        public void AtualizarAutor(Autor autor)
-        {
-            throw new NotImplementedException();
-        }
-
         public void InserirNovoAutor(Autor autor)
         {
             Conexao.Executar("inserirNovoAutor", "APPS", autor);
+        }
+
+        public void AtualizarAutor(Autor autor)
+        {
+            Conexao.Executar("atualizarAutor", "APPS", autor);
         }
     }
 }
